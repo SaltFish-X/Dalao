@@ -4,6 +4,8 @@
 
 [2. 这道算法题可以进leetcode 出题人 Y腿](#2-这道算法题可以进leetcode-出题人-y腿)
 
+[3. 柯里化并不是那么容易 出题人 OlafCheng](#3-柯里化并不是那么容易-出题人-OlafCheng) 
+
 ### 1. 这家前后端关系肯定好不到哪里去 出题人 B大
 
 这段php代码 可能输出一个 JSON 也可能输出空
@@ -87,4 +89,93 @@ cut = 2  index=[3,2,0]
 ```
 1. 找相邻最近的ab ac bc各一个，然后取这三个值里的最大值，就是cut。最大值的两个点就是需要的index其中两个，b存不存在于剩下两组中需要笔头证明一下
 2. 比如全排列一次 … 然后取其中的每种情况的最优解，因为数组里的数字本身是有序的，所以最多只需要遍历 xn 次，对 abc 的坐标数组顺序全排列一次，然后每种情况取一个递增序列，因为只要找到递增，就是这个情况的最优解了，所以 6 次查找也是 6*k*n = n …
+```
+
+### 3. 柯里化并不是那么容易 出题人 OlafCheng
+
+实现如下函数：
+
+```javascript
+add(2,5) // 7
+add(2)(5) // 7
+```
+
+思路：
+
+```javascript
+[].slice.call.(arguments).length
+```
+
+错误答案：
+
+```javascript
+function add() {
+  function calculate() {
+    var arr = [].slice.call(arguments);
+    switch(arr.length) {
+      case 0:
+        return 0;
+      case 1:
+        return arr[0];
+      default:
+        return arr.reduce(function(ac, cv) {
+          return ac + cv;
+        })
+    }
+  }
+  var result = calculate(arguments); // 这样写是错误的
+  function func() {
+    result += calculate(arguments);
+    return func;
+  }
+
+  func.toString = func.valueOf = function() {
+    return result;
+  }
+
+  return func;
+}
+```
+
+出错原因：
+
+```javascript
+出错的原因是, arguments 是 array-like，不是 array
+内部细节，直接当做实参传的话，会调用它的 toString 属性，转换成'[object Arguments]'
+然后传进去的参数就不是数组或者 arguments 本身了，而是一个字符串
+进行如下修改即可
+
+var result = calculate.apply(null, arguments);
+function func() {
+  result += calculate.apply(null, arguments);
+  return func;
+}
+```
+正确答案：
+
+```javascript
+var tmp = function () {
+            sum += Array.prototype.slice.call(arguments).reduce((a, b) => a + b, 0);
+            return tmp;
+          }
+
+
+```
+
+```javascript
+const add = (...args) => {
+  const calculate = (arr) => {
+    return arr.length === 0 ? 0 : arr.length === 1 ? arr[0] : arr.reduce((ac, cv) => ac + cv);
+  }
+
+  let result = calculate(args);
+  const func = (...args) => {
+    result += calculate(args);
+    return func;
+  }
+
+  func.toString = func.valueOf = () => result;
+
+  return func;
+}
 ```
