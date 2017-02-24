@@ -220,3 +220,8 @@ ul.children.length
 7.flex
 8.table + writing mode
 ```
+第三题
+
+```
+自己Google LazyMan js
+```
