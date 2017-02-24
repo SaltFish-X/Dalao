@@ -1,4 +1,4 @@
-# 大佬带我装逼带我飞
+# 每日一题（也称大佬带我装逼带我飞）
 
 [1. 这家前后端关系肯定好不到哪里去 出题人 B大](#1-这家前后端关系肯定好不到哪里去-出题人-b大)
 
@@ -178,4 +178,45 @@ const add = (...args) => {
 
   return func;
 }
+```
+
+### 4.三题全家桶 出题人 斌 
+
+1. 有如下HTML
+```
+<ul>
+  <li>1</li>
+  <li>2</li>
+  <li>3</li>
+  <li>4</li>
+</ul>
+
+1. 点击 ul 所有li的数量
+2. 点击 ul 当前li的值
+3. 不用框架
+4. li动态增加
+
+```
+
+2. 垂直居中的方法越多越好
+
+3. lazyman
+
+思路：
+
+第一题
+```
+ul.children.length
+```
+
+第二题
+```
+1.line-height
+2.0宽元素 inline-block
+3.伪元素inline-block
+4.translate -50%/-50% + absolute 50%/50%
+5.absolute offset 0/0/0/0
+6.table-cell
+7.flex
+8.table + writing mode
 ```
