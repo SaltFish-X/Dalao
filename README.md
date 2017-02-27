@@ -8,6 +8,8 @@
 
 [4. 三题全家桶 出题人 斌 ](#4-三题全家桶-出题人-斌)
 
+[5.闭包 出题人 JS权威指南](#5-闭包-出题人-js权威指南)
+
 ### 1. 这家前后端关系肯定好不到哪里去 出题人 B大
 
 这段php代码 可能输出一个 JSON 也可能输出空
@@ -225,4 +227,36 @@ ul.children.length
 
 ```
 自己Google LazyMan js
+```
+
+### 5.闭包 出题人 JS权威指南
+
+```javascript
+function constfuncs() {
+  var funcs = []
+  for(var i = 0; i<10; i++){
+    funcs[i] = function() {return i}
+  }
+  return funcs
+}
+
+var funcs = constfuncs()
+funcs[5]() // 10 如何返回5
+```
+
+思路：
+```
+js权威指南在 184-187讲述了闭包
+闭包可以让函数内部访问外面的变量，同时return的值是函数的私有变量
+但是闭包和循环连用的时候容易出问题
+要立即执行才能达到效果
+```
+
+正确答案：
+```javascript
+funcs[i] = function() {return i}
+// 先在外面包上一层函数
+funcs[i] = function () { return function() {return i} }
+// 再立即执行即可
+funcs[i] = (function (i) { return function() {return i} }(i))
 ```
