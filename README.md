@@ -235,7 +235,7 @@ ul.children.length
 function constfuncs() {
   var funcs = []
   for(var i = 0; i<10; i++){
-    funcs[i] = function() {return i}
+    funcs[i] = function() { return i }
   }
   return funcs
 }
@@ -254,9 +254,9 @@ js权威指南在 184-187讲述了闭包
 
 正确答案：
 ```javascript
-funcs[i] = function() {return i}
+funcs[i] = function()  { return i }
 // 先在外面包上一层函数
-funcs[i] = function () { return function() {return i} }
+funcs[i] = function () { return function() { return i } }
 // 再立即执行即可
-funcs[i] = (function (i) { return function() {return i} }(i))
+funcs[i] = (function (i) { return function() { return i } }(i))
 ```
