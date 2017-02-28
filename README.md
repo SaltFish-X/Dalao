@@ -10,6 +10,8 @@
 
 [5. 闭包 出题人 JS权威指南](#5-闭包-出题人-js权威指南)
 
+[6. 连等赋值(外链至SE)](https://segmentfault.com/a/1190000004224719)
+
 ### 1. 这家前后端关系肯定好不到哪里去 出题人 B大
 
 这段php代码 可能输出一个 JSON 也可能输出空
@@ -260,3 +262,4 @@ funcs[i] = function () { return function() { return i } }
 // 再立即执行即可
 funcs[i] = (function (i) { return function() { return i } }(i))
 ```
+
