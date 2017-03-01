@@ -12,6 +12,8 @@
 
 [6. 连等赋值(外链至SE)](https://segmentfault.com/a/1190000004224719)
 
+[7. script标签放在body最底部的原因(外链至SE)](https://segmentfault.com/a/1190000004292479)
+
 ### 1. 这家前后端关系肯定好不到哪里去 出题人 B大
 
 这段php代码 可能输出一个 JSON 也可能输出空
