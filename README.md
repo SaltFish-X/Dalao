@@ -14,7 +14,6 @@
 
 [7. script标签放在body最底部的原因(外链至SE)](https://segmentfault.com/a/1190000004292479)
 
-[8. 大佬的面试经历题](#8-大佬的面试经历题)
 ### 1. 这家前后端关系肯定好不到哪里去 出题人 B大
 
 这段php代码 可能输出一个 JSON 也可能输出空
@@ -265,16 +264,3 @@ funcs[i] = function () { return function() { return i } }
 // 再立即执行即可
 funcs[i] = (function (i) { return function() { return i } }(i))
 ```
-
-### 8. 大佬的面试经历题
-```
-实现一个Function.prototype.bind
-两个有重复的数组求交集，时间复杂度尽量小
-实现一个Promise队列
-实现一个jsonp
-写一个原型继承的过程
-两个stack实现一个queue 时间复杂度尽量小
-异步流程控制
-还有模块化方案
-实现一个watcher
-``` 
