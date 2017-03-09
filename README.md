@@ -14,6 +14,8 @@
 
 [7. script标签放在body最底部的原因(外链至SE)](https://segmentfault.com/a/1190000004292479)
 
+[8. JavaScript Puzzlers(44题外链)](http://javascript-puzzlers.herokuapp.com/)
+
 ### 1. 这家前后端关系肯定好不到哪里去 出题人 B大
 
 这段php代码 可能输出一个 JSON 也可能输出空
@@ -112,6 +114,8 @@ add(2)(5) // 7
 
 ```javascript
 [].slice.call.(arguments).length
+或javascript权威指南8.8.3不完全函数
+Array.prototype.slice.call
 ```
 
 错误答案：
