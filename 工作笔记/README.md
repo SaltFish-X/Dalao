@@ -34,3 +34,11 @@
 
   ```
 3. [HTML标签标准](https://www.w3.org/TR/html5/dom.html#kinds-of-content)
+
+4. vue的图片
+
+  ```javascript 
+  img: require('../') //正常的路径加require
+  background-image: url('path/to/your/source') // css的路径
+  ```
+  
