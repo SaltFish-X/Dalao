@@ -16,6 +16,8 @@
 
 [8. JavaScript Puzzlers(44题外链)](http://javascript-puzzlers.herokuapp.com/)
 
+[9. 基础的闭包题](#9-基础的闭包题)
+
 ### 1. 这家前后端关系肯定好不到哪里去 出题人 B大
 
 这段php代码 可能输出一个 JSON 也可能输出空
@@ -267,4 +269,57 @@ funcs[i] = function()  { return i }
 funcs[i] = function () { return function() { return i } }
 // 再立即执行即可
 funcs[i] = (function (i) { return function() { return i } }(i))
+```
+
+### 9. 基础的闭包题
+```javascript
+var number = 2;
+var obj = {
+	number : 4,
+	fn1 : (function() {		 
+		this.number *= 2;
+		number = number*2;
+ 		var number = 3;
+		return function() {
+			this.number *= 2;
+			number *= 3;
+			alert(number);
+		}
+	})(),
+	db2:function(){ this.number *= 2 }
+};
+
+var fn1 = obj.fn1;
+alert(number);//问这会会弹出什么结果 
+fn1();//这会弹出什么结果 
+obj.fn1();//这次弹出什么结果
+
+alert(window.number); //这会window.number的结果是什么
+alert(obj.number);   //这会obj.number的结果是什么
+```
+
+答案：
+```javascript
+4 /* 立即执行了
+	  this.number *= 2;
+		number = number*2;
+ 		var number = 3; 为局部变量
+   */
+
+9 /*
+  var number = 3;
+  return function() {
+			this.number *= 2;
+			number *= 3;
+			alert(number);
+		}
+  */ 		
+
+27 // 再次执行了闭包，9*3=27 
+
+8 // 执行了两次，存值，闭包
+
+8 // 执行了两次，未存值，非闭包
+
+判断闭包：运行时的变量的引用被其他作用域的变量引用
 ```
