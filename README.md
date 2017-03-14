@@ -18,6 +18,8 @@
 
 [9. 基础的闭包题](#9-基础的闭包题)
 
+[10. BFC IFC CSS布局](10-BFC-IFC-TFC-FFC-GFC-RFC)
+
 ### 1. 这家前后端关系肯定好不到哪里去 出题人 B大
 
 这段php代码 可能输出一个 JSON 也可能输出空
@@ -323,3 +325,11 @@ alert(obj.number);   //这会obj.number的结果是什么
 
 判断闭包：运行时的变量的引用被其他作用域的变量引用
 ```
+
+### 10. BFC IFC TFC FFC GFC RFC
+
+[css标准-论坛贴](http://bbs.csdn.net/topics/340173664)
+
+[web规范9.8](https://www.w3.org/TR/CSS2/visuren.html#inline-formatting)
+
+[BFC 块格式化上下文](https://developer.mozilla.org/zh-CN/docs/Web/Guide/CSS/Block_formatting_context)
