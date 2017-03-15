@@ -20,6 +20,8 @@
 
 [10. BFC IFC CSS布局](10-BFC-IFC-TFC-FFC-GFC-RFC)
 
+[11. 函数的连续调用](11-函数的连续调用)
+
 ### 1. 这家前后端关系肯定好不到哪里去 出题人 B大
 
 这段php代码 可能输出一个 JSON 也可能输出空
@@ -333,3 +335,42 @@ alert(obj.number);   //这会obj.number的结果是什么
 [web规范9.8](https://www.w3.org/TR/CSS2/visuren.html#inline-formatting)
 
 [BFC 块格式化上下文](https://developer.mozilla.org/zh-CN/docs/Web/Guide/CSS/Block_formatting_context)
+
+### 11. 函数的连续调用
+```javascript
+function fun(n,o){
+  console.log(o)
+  return{
+      fun:function(m){
+          return fun(m,n);
+      }
+  };
+}
+var a = fun(0); a.fun(1); a.fun(2); a.fun(3);
+var b = fun(0).fun(1).fun(2).fun(3);
+var c = fun(0).fun(1); c.fun(2); c.fun(3);
+```
+
+答案：
+```javascript
+var a = fun(0);   //输出 undefined;,返回{fun:function(m){return fun(m,0);}}
+a.fun(1);         //输出0; 返回{fun:function(){return fun(m,1)}};
+a.fun(2);         //输出0; 返回{fun:function(){return fun(m,2)}};
+a.fun(3);         //输出0; 返回{fun:function(){return fun(m,3)}};
+
+var b = fun(0).fun(1).fun(2).fun(3);
+//第一步：输出undefined;返回{fun:function(){m}{return fun(m,0)}}
+//第二步: 输出0 返回{fun:function(m){return fun(m,1);}}
+//第三步: 输出1，返回{fun:function(m){return fun(m,2);}}
+//第三步: 输出2，返回{fun:function(m){return fun(m,3);}}
+
+var c= fun(0).fun(1);
+//第一步：输出undefined;返回{fun:function(){m}{return fun(m,0)}}
+//第二步: 输出0 返回{fun:function(m){return fun(m,1);}}
+c.fun(2);
+//第一步: 输出1 返回{fun:function(m){return fun(m,2);}}
+c.fun(3);
+//第一步: 输出1 返回{fun:function(m){return fun(m,3);}}
+
+打印的都是 o ,即返回函数的第二个参数，对照每一步的返回值即可得出答案
+```
