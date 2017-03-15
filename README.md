@@ -18,7 +18,7 @@
 
 [9. 基础的闭包题](#9-基础的闭包题)
 
-[10. BFC IFC CSS布局](#10-BFC-IFC-TFC-FFC-GFC-RFC)
+[10. BFC IFC CSS布局](#10-bfc-ifc-tfc-ffc-gfc-rfc)
 
 [11. 函数的连续调用](#11-函数的连续调用)
 
