@@ -24,6 +24,8 @@
 
 [12. 考察New和原型链(外链至SE)](https://segmentfault.com/a/1190000007979730)
 
+[13. 面试题杂谈](#13-面试题杂谈)
+
 ### 1. 这家前后端关系肯定好不到哪里去 出题人 B大
 
 这段php代码 可能输出一个 JSON 也可能输出空
@@ -375,4 +377,44 @@ c.fun(3);
 //第一步: 输出1 返回{fun:function(m){return fun(m,3);}}
 
 打印的都是 o ,即返回函数的第二个参数，对照每一步的返回值即可得出答案
+```
+
+### 13. 面试题杂谈
+问题：
+```html
+<ul>
+<li>1</li>
+<li>2</li>
+<li>3</li>
+</ul>  
+
+点击ul显示li的长度
+点击li显示li的内容
+
+2. 问输出啥
+for(let i = 0; i < 5; i++){
+  setTimeout(() => console.info(i))
+}
+```
+
+答案：
+```javascript
+const $ul = document.querySelector('ul')
+$ul.addEventListener('click', e => {
+    const $target = e.target
+    console.log($target === $ul
+                ? $ul.children.length
+                : $ul.children[[].indexOf.call($ul.children, $target)].innerText)
+                
+})
+
+const $ul = document.querySelector('ul')
+$ul.addEventListener('click', e => {
+    const $target = e.target
+    console.log($target === $ul
+                ? $ul.children.length
+                : $target.innerText)
+})
+
+2. 0、1、2、3、4 let作用于块作用域
 ```
