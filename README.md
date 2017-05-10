@@ -395,6 +395,8 @@ c.fun(3);
 for(let i = 0; i < 5; i++){
   setTimeout(() => console.info(i))
 }
+
+3. 如何搞定运营商劫持（某位不知名的大佬传授的
 ```
 
 答案：
@@ -417,4 +419,8 @@ $ul.addEventListener('click', e => {
 })
 
 2. 0、1、2、3、4 let作用于块作用域
+
+3.
+<!doctype html>
+<!--<html></html>-->
 ```
