@@ -176,12 +176,12 @@ function func() {
 正确答案：
 
 ```javascript
-var tmp = function () {
-            sum += Array.prototype.slice.call(arguments).reduce((a, b) => a + b, 0);
-            return tmp;
+var add = function () {
+            var sum =+ Array.prototype.slice.call(arguments).reduce((a, b) => a + b, 0);
+            return sum
           }
 
-
+这个只支持add(1,2)
 ```
 
 ```javascript
@@ -195,9 +195,7 @@ const add = (...args) => {
     result += calculate(args);
     return func;
   }
-
   func.toString = func.valueOf = () => result;
-
   return func;
 }
 ```
@@ -397,6 +395,26 @@ for(let i = 0; i < 5; i++){
 }
 
 3. 如何搞定运营商劫持（某位不知名的大佬传授的
+
+4.
+var num = 10;
+var obj = {
+    num: 20,
+    fn: (function (num) {
+        this.num *= 2;
+        num += 10;
+        return function () {
+            this.num *= 3;
+            num += 1;
+            console.log(num);
+        }
+    })(num)
+};
+var fn = obj.fn;
+fn();
+obj.fn();
+console.log(window.num, obj.num);
+
 ```
 
 答案：
@@ -423,4 +441,51 @@ $ul.addEventListener('click', e => {
 3.
 <!doctype html>
 <!--<html></html>-->
+<!—-<html><head></head><body></body></html>-—>
+这个可以干掉运营商广告吗但是自己脚步也狗带了，可能放在头部和尾部
+
+4.
+fn(); // 21
+obj.fn(); // 22
+console.log(window.num, obj.num); // 60,60
+
+思路：
+我们尝试修改一下num
+var num = 1;
+var obj = {
+    num: 20,
+    fn: (function (num) {
+        this.num *= 2;
+        num += 10;
+        return function () {
+            this.num *= 3;
+            num += 1;
+            console.log(num);
+        }
+    })(num)
+};
+var fn = obj.fn;
+fn(); // 12
+obj.fn(); // 13
+console.log(window.num, obj.num); // 6 60
+
+var num = 1
+var b = { 
+		num:2,
+		con:console.info(this.num,num,"this"), // 1, 1, this
+		fun(){console.info(this.num, num)} // 2, 1
+    fun:(function(console.info(this.num, num)){})() //1, 1
+}
+函数的this才会绑上了对象内的属性，对象的属性a无法访问到属性b，即使是b.num依然报错
+
+那么fn() obj.fn()的区别又在什么地方呢
+fn = function () {
+      this.num *= 3;
+      num += 1;
+      console.log(num);
+    }
+
+fn()的this绑的是window.num
+obj.fn()的this绑的是obj.num
+
 ```
