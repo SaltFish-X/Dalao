@@ -415,6 +415,7 @@ fn();
 obj.fn();
 console.log(window.num, obj.num);
 
+5. "acctYestrtNew"按大写字母切割
 ```
 
 答案：
@@ -444,7 +445,7 @@ $ul.addEventListener('click', e => {
 <!—-<html><head></head><body></body></html>-—>
 这个可以干掉运营商广告吗但是自己脚步也狗带了，可能放在头部和尾部
 
-4.
+4.考察this绑定
 fn(); // 21
 obj.fn(); // 22
 console.log(window.num, obj.num); // 60,60
@@ -474,7 +475,7 @@ var b = {
 		num:2,
 		con:console.info(this.num,num,"this"), // 1, 1, this
 		fun(){console.info(this.num, num)} // 2, 1
-    fun:(function(console.info(this.num, num)){})() //1, 1
+    fun:(function(console.info(this.num, num)){})() // 1, 1
 }
 函数的this才会绑上了对象内的属性，对象的属性a无法访问到属性b，即使是b.num依然报错
 
@@ -488,4 +489,20 @@ fn = function () {
 fn()的this绑的是window.num
 obj.fn()的this绑的是obj.num
 
+函数的this指向这个函数的调用者，如果没有，则是window
+排除call，apply，bind以及箭头函数这些东西
+
+5.
+"helloWorld".replace(/[A-Z]/g, '-$1').split('-')
+
+[].reduce.call('helloWorld', (arr, char) => {
+  const code = char.charCodeAt()
+  const offset = + (code >=65 && code <=90) - 1
+  arr[arr.length + offset] = `${arr[arr.length + offset] || ''}${char}`
+  return arr
+}, [''])
+
+"helloWorld".split('').reduce((a, b) => {
+  return (b === b.toUpperCase ? a.push(b) : a.length ? a[a.length-1] += b :a.push(b), a)
+}, [])
 ```
