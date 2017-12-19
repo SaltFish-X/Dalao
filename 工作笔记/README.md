@@ -33,6 +33,7 @@
   }
 
   ```
+
 3. [HTML标签标准](https://www.w3.org/TR/html5/dom.html#kinds-of-content)
 
 4. vue的图片
@@ -41,4 +42,11 @@
   img: require('../') //正常的路径加require
   background-image: url('path/to/your/source') // css的路径
   ```
-  
+
+5. commit设定时间
+
+   ```
+   git commit --amend --date=2017-10-08T09:51:07
+   ```
+
+6. ​

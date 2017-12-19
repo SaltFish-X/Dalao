@@ -50,3 +50,6 @@ name // "function (){}"
 name的全局变量被视作window.name
 return String
 ```
+## 5.ios10 safari 访问会白屏 
+
+顺便说下 ios10 safari 访问会白屏 因为 const问题
