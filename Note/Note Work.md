@@ -1,17 +1,17 @@
 # Note Work
 
-##### 装饰器
+#### 装饰器
 
 ```
 作用于类、类属性
 增加新行为但不修改函数
 ```
-##### jQuery绑定函数
+#### jQuery绑定函数
 
 ```javascript
 $.fn.func = func
 ```
-##### bootStrap的栅栏
+#### bootStrap的栅栏
 
 ```css
 .container {
@@ -37,20 +37,20 @@ $.fn.func = func
   width: 100 / 12 * 1 %;
 }
 ```
-##### [HTML标签标准](https://www.w3.org/TR/html5/dom.html#kinds-of-content)
+#### [HTML标签标准](https://www.w3.org/TR/html5/dom.html#kinds-of-content)
 
-##### vue的图片
+#### vue的图片
 
 ```javascript 
 img: require('../') //正常的路径加require
 background-image: url('path/to/your/source') // css的路径
 ```
-##### commit设定时间
+#### commit设定时间
 
 ```
 git commit --amend --date=2017-10-08T09:51:07
 ```
-##### vueRouter lazy-loading
+#### vueRouter lazy-loading
 
 ```
 v3.0.1
