@@ -36,6 +36,8 @@
 
 [18. node怎么使用module.export获得一个异步结果](#18-node怎么使用module.export获得一个异步结果)
 
+[19. 计算一个字符串中各个字符的出现次数](#19-计算一个字符串中各个字符的出现次数)
+
 ### 1. 这家前后端关系肯定好不到哪里去 出题人 B大
 
 这段php代码 可能输出一个 JSON 也可能输出空
@@ -563,3 +565,10 @@ https://github.com/node-modules/urllib-sync
 ```
 
 ![node获取异步结果](./img/node获取异步结果.png)
+
+### 19. 计算一个字符串中各个字符的出现次数
+
+```javascript
+var arr = 'dfsa dawefafa sfar32rcweacasfw1eassfa'
+arr.split('').reduce((p, k) => (p[k]++ || (p[k]=1), p), {})
+```
