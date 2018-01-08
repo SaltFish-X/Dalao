@@ -51,13 +51,19 @@
     [Done] 3. md语法大致掌握
     4. 阅读英文版 You Don't Know JavaScript
 
+### 2018
+
+```
+1.8- learn TypeScript
+```
+
 ## Goal
 
 ### 2017.2.21
     1. 开发类iview的ui库
     2. 数据可视化&&小程序canves
 
-### 2018.1.2
+### 2018
 
 ```
 1. ts
