@@ -41,9 +41,9 @@ supervisor --harmony index
 
 ### Note TypeScript
 
-#### [Ts文档](https://www.tslang.cn/docs/handbook/basic-types.html)
+#### Ts配置
 
-#### ts配置文件 tsconfig.json
+##### tsconfig.json
 
 ```json
 {
@@ -59,9 +59,11 @@ supervisor --harmony index
 }
 ```
 
-#### webpack 配置
+##### webpack 配置
 
 `ts-loader`负责加载 `source-map-loader` 用来调试
+
+##### [Ts文档](https://www.tslang.cn/docs/handbook/basic-types.html)
 
 #### Ts 接口语法
 
@@ -139,8 +141,6 @@ interface NumberDictionary {
 }
 ```
 
-  ​
-
 ##### 类类型
 
 在接口中定义方法，在类中实现
@@ -194,13 +194,38 @@ interface Square extends Shape, PenStroke {
 }
 ```
 
-#### TS的类
+##### 类的名词
 
-| 名词   | 意义                          |
-| ---- | --------------------------- |
-| 静态变量 | 存在于类本身，用类名访问                |
-| 实例变量 | 存在于实例上，需要new才能初始化。类中用this访问 |
-| 抽象类  | abstract 类似接口，抽象方法必须在派生类中实现 |
-|      |                             |
-|      |                             |
+```
+静态变量：存在于类本身，用类名访问
+实例变量：存在于实例上，需要new才能初始化。类中用this访问
+抽象类：abstract 类似接口，抽象方法必须在派生类中实现
+```
+
+##### 范型
+
+支持多种数据
+
+[范型约束示例](https://www.tslang.cn/docs/handbook/generics.html)
+
+```typescript
+/* 范型函数
+ * 使用类型变量<T>
+ * 范型T捕获参数的类型，使函数能传入并返回数值类型
+ */
+function identity<T>(arg: T): T { return arg }
+
+// type of output will be 'string'
+let output = identity("myString");  
+let output = identity<string>("myString"); 
+
+/* 范型变量
+ * 想以数组的数据格式操作<T>
+ */
+function identity<T>(arg: T[]): T[]
+function identity<T>(arg: Array[]): T[]
+
+// 还可以写成范型函数，范型接口，范型类，范型只能用于类的实例部分
+
+```
 
