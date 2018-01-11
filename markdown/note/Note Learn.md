@@ -63,7 +63,9 @@ supervisor --harmony index
 
 `ts-loader`负责加载 `source-map-loader` 用来调试
 
-##### [Ts文档](https://www.tslang.cn/docs/handbook/basic-types.html)
+##### [Ts文档](https://www.tslang.cn/docs/handbook/basic-types.html) 
+
+跳过的章节：类型推论、类型兼容性
 
 #### Ts 接口语法
 
@@ -264,5 +266,42 @@ var nameOfA = Enum[a]; // "A"
 
 const enum Enum {} // 常数枚举 不同于常规的枚举将在编译阶段删除
 declare enum Enum {} // 外部枚举 描述已经存在的枚举类型
+```
+
+##### 高级类型
+
+| 类型   |                                          |
+| ---- | ---------------------------------------- |
+| 交叉类型 | 将多个类型合并为一个类型 ，例：Person & Sercializable<br />该类型的对象同时拥有了这三种类型的成员 |
+| 联合类型 | 值为多种类型之一，例子：number \| string<br />只能访问联合中共有的类方法 |
+| 类型保护 | 定义函数的返回值为 *类型谓词*  确保运行时作用域的类型            |
+| 待添加  |                                          |
+
+```typescript
+// 类型保护示例
+// 必须用类型断言才能将两张类区别
+if ((<Fish>pet).swim) {
+    (<Fish>pet).swim();
+}
+else {
+    (<Bird>pet).fly();
+}
+
+// 类型保护区分两种类
+function isFish(pet: Fish | Bird): pet is Fish {
+    return (<Fish>pet).swim !== undefined;
+}
+
+if (isFish(pet)) {
+    pet.swim();
+} else {
+    pet.fly();
+}
+
+// instanceof类型保护
+// instanceof的右侧要求是一个构造函数
+if (padder instanceof SpaceRepeatingPadder) {
+    padder; // 类型细化为'SpaceRepeatingPadder'
+}
 ```
 

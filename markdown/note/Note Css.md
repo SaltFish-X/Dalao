@@ -12,7 +12,7 @@ cross axis 垂直交叉轴 cross start 开始位置 cross end 结束位置
 main size 项目所占主轴空间 cross size 项目所占交叉轴空间f![flex布局001]
 ```
 
-![flex布局001](../img/flex布局001.png)
+![flex布局001](../../img/flex布局001.png)
 
 
 
@@ -179,6 +179,23 @@ inline-block的父元素加font-size: 0
 这样去掉空格和间隙
 ```
 
+### 背景模糊
+
+```css
+filter:bulr(10px)
+overflow:hidden
+```
+
+### 超出文字省略
+
+```css
+white-space：nowarp
+overflow：hidden
+text-overflow：ellipsis
+```
+
+
+
 ## 布局
 
 ### 垂直居中
@@ -227,3 +244,4 @@ html结构
 }
 ```
 
+#### 
