@@ -24,6 +24,14 @@
 
 `ts-loader`负责加载 `source-map-loader` 用来调试
 
+##### 编译配置
+
+```
+在处理模块时，ts支持多种加载方式，需要使用不同的指令来区分。
+Node.js(CommonJs): tsc --module commonjs Test.ts
+Require.js(AMD): --moudule amd
+```
+
 ##### [Ts文档](https://www.tslang.cn/docs/handbook/basic-types.html) 
 
 跳过的章节：类型推论、类型兼容性
@@ -266,6 +274,43 @@ if (padder instanceof SpaceRepeatingPadder) {
 }
 ```
 
-##### 模块 TODO
+##### 模块 
+
+* 可选模块加载
+
+```typescript
+import id = require('...') // 模块动态调用 
+
+declare function require(moduleName: string): any;
+import { ZipCodeValidator as Zip } from "./ZipCodeValidator";
+
+if (needZipValidation) {
+  let ZipCodeValidator: typeof Zip = require("./ZipCodeValidator");
+    let validator = new ZipCodeValidator();
+    if (validator.isAcceptable("...")) { /* ... */ }
+}
+```
+
+外部模块
+
+```typescript
+declare module "url" {
+    export interface Url {
+        protocol?: string;
+        hostname?: string;
+        pathname?: string;
+    }
+
+    export function parse(urlStr: string, parseQueryString?, slashesDenoteHost?): Url;
+}
+
+declare module "path" {
+    export function normalize(p: string): string;
+    export function join(...paths: any[]): string;
+    export let sep: string;
+}
+```
+
+
 
 ##### 命名空间 TODO
