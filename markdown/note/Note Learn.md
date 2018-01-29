@@ -335,3 +335,5 @@ function applyMixins(derivedCtor: any, baseCtors: any[]) {
 
 
 ##### 命名空间 TODO
+
+##### 装饰器TODO
