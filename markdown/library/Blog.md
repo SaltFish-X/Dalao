@@ -19,16 +19,3 @@
 | Name                                     | Summary |
 | ---------------------------------------- | ------- |
 | [ 深入理解JavaScript系列（12）：变量对象（Variable Object）](http://www.cnblogs.com/TomXu/archive/2012/01/16/2309728.html) |         |
-
-### Blog GitHub 
-
-| Name                                     | Summary |
-| ---------------------------------------- | ------- |
-| [TypeScript 入门教程](https://github.com/xcatliu/typescript-tutorial/blob/master/README.md) |         |
-
-#### Other HTML
-
-| Name                                     | Summary              |
-| ---------------------------------------- | -------------------- |
-| [ or: do you really know JavaScript?](http://javascript-puzzlers.herokuapp.com/) | JavaScript Puzzlers! |
-
