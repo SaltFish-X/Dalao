@@ -10,3 +10,9 @@
 | ---------------------------------------- | -------------------- |
 | [ or: do you really know JavaScript?](http://javascript-puzzlers.herokuapp.com/) | JavaScript Puzzlers! |
 
+#### Other issue
+
+| Name                                     | Summary |
+| ---------------------------------------- | ------- |
+| [纯前端实现excel表格导入导出](https://segmentfault.com/a/1190000011057149) |         |
+
