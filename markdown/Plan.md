@@ -54,7 +54,8 @@
 ### 2018
 
 ```
-1.8- learn TypeScript
+1.8-2.1 learn TypeScript
+2.7-    learn puppeteer
 ```
 
 ## Goal
