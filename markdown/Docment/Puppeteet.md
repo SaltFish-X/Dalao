@@ -1,6 +1,6 @@
 ##### Released API: [v1.0.0](https://github.com/GoogleChrome/puppeteer/blob/v1.0.0/docs/api.md) | [v0.13.0](https://github.com/GoogleChrome/puppeteer/blob/v0.13.0/docs/api.md) | [v0.12.0](https://github.com/GoogleChrome/puppeteer/blob/v0.12.0/docs/api.md) | [v0.11.0](https://github.com/GoogleChrome/puppeteer/blob/v0.11.0/docs/api.md) | [v0.10.2](https://github.com/GoogleChrome/puppeteer/blob/v0.10.2/docs/api.md) | [v0.10.1](https://github.com/GoogleChrome/puppeteer/blob/v0.10.1/docs/api.md) | [v0.10.0](https://github.com/GoogleChrome/puppeteer/blob/v0.10.0/docs/api.md) | [v0.9.0](https://github.com/GoogleChrome/puppeteer/blob/v0.9.0/docs/api.md)
 
-# Puppeteer API v<!-- GEN:version -->1.0.0-post<!-- GEN:stop-->
+# Puppeteer API 
 
 ##### Table of Contents
 
@@ -38,21 +38,21 @@
 - [class: Page](#class-page) 可以用on or once 处理事件
   * [event: 'console'](#event-console) 页面调用console时触发
   * [event: 'dialog'](#event-dialog) 调用alert、prompt、confirm、beforeunload时触发
-  * [event: 'domcontentloaded'](#event-domcontentloaded)
-  * [event: 'error' ](#event-error) Emitted when the page crashes.
-  * [event: 'frameattached'](#event-frameattached)
-  * [event: 'framedetached'](#event-framedetached)
-  * [event: 'framenavigated'](#event-framenavigated)
-  * [event: 'load'](#event-load)
-  * [event: 'metrics'](#event-metrics)
+  * [event: 'domcontentloaded'](#event-domcontentloaded) DOMContentLoaded event is dispatched
+  * [event: 'error' ](#event-error)  when the page crashes.
+  * [event: 'frameattached'](#event-frameattached) when a frame is attached.
+  * [event: 'framedetached' ](#event-framedetached) when a frame is detached.
+  * [event: 'framenavigated'](#event-framenavigated) when a frame is navigated to new url
+  * [event: 'load'](#event-load) when JavaScript load event is dispatched
+  * [event: 'metrics'](#event-metrics)  see 'page.metrics'
   * [event: 'pageerror'](#event-pageerror)
   * [event: 'request'](#event-request)
   * [event: 'requestfailed'](#event-requestfailed)
   * [event: 'requestfinished'](#event-requestfinished)
   * [event: 'response'](#event-response)
-  * [page.$(selector)](#pageselector)
-  * [page.$$(selector)](#pageselector)
-  * [page.$$eval(selector, pageFunction[, ...args])](#pageevalselector-pagefunction-args)
+  * [page.$(selector)](#pageselector) document.queryselector
+  * [page.$$(selector)](#pageselector) document.querySelectorAll
+  * [page.$$eval(selector, pageFunction[, ...args])](#pageevalselector-pagefunction-args) 作为函数的一个变量
   * [page.$eval(selector, pageFunction[, ...args])](#pageevalselector-pagefunction-args)
   * [page.$x(expression)](#pagexexpression)
   * [page.addScriptTag(options)](#pageaddscripttagoptions)
