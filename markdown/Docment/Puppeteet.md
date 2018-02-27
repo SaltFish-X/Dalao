@@ -54,18 +54,18 @@
   * [page.$$(selector)](#pageselector) document.querySelectorAll
   * [page.$$eval(selector, pageFunction[, ...args])](#pageevalselector-pagefunction-args) 作为函数的一个变量
   * [page.$eval(selector, pageFunction[, ...args])](#pageevalselector-pagefunction-args)
-  * [page.$x(expression)](#pagexexpression)
-  * [page.addScriptTag(options)](#pageaddscripttagoptions)
-  * [page.addStyleTag(options)](#pageaddstyletagoptions)
+  * [page.$x(expression)](#pagexexpression) The method evaluates the XPath expression.
+  * [page.addScriptTag(options)](#pageaddscripttagoptions) Adds a `<script>` tag into the page with the desired url or content.
+  * [page.addStyleTag(options)](#pageaddstyletagoptions) Adds a `<link rel="stylesheet">` tag into the page with the desired url or a `<style type="text/css">` tag with the content.
   * [page.authenticate(credentials)](#pageauthenticatecredentials)
-  * [page.bringToFront()](#pagebringtofront)
+  * [page.bringToFront()](#pagebringtofront) Brings page to front 
   * [page.click(selector[, options])](#pageclickselector-options)
   * [page.close()](#pageclose)
   * [page.content()](#pagecontent)
   * [page.cookies(...urls)](#pagecookiesurls)
   * [page.coverage](#pagecoverage)
   * [page.deleteCookie(...cookies)](#pagedeletecookiecookies)
-  * [page.emulate(options)](#pageemulateoptions)
+  * [page.emulate(options)](#pageemulateoptions) Emulates given device metrics and user agent.
   * [page.emulateMedia(mediaType)](#pageemulatemediamediatype)
   * [page.evaluate(pageFunction, ...args)](#pageevaluatepagefunction-args)
   * [page.evaluateHandle(pageFunction, ...args)](#pageevaluatehandlepagefunction-args)
