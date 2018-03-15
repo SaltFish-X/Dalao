@@ -37,77 +37,151 @@
   * [browser.wsEndpoint()](#browserwsendpoint) Browser websocket url
 - [class: Page](#class-page) 可以用on or once 处理事件
   * [event: 'console'](#event-console) 页面调用console时触发
+
   * [event: 'dialog'](#event-dialog) 调用alert、prompt、confirm、beforeunload时触发
+
   * [event: 'domcontentloaded'](#event-domcontentloaded) DOMContentLoaded event is dispatched
+
   * [event: 'error' ](#event-error)  when the page crashes.
+
   * [event: 'frameattached'](#event-frameattached) when a frame is attached.
+
   * [event: 'framedetached' ](#event-framedetached) when a frame is detached.
+
   * [event: 'framenavigated'](#event-framenavigated) when a frame is navigated to new url
+
   * [event: 'load'](#event-load) when JavaScript load event is dispatched
+
   * [event: 'metrics'](#event-metrics)  see 'page.metrics'
+
   * [event: 'pageerror'](#event-pageerror)
+
   * [event: 'request'](#event-request)
+
   * [event: 'requestfailed'](#event-requestfailed)
+
   * [event: 'requestfinished'](#event-requestfinished)
+
   * [event: 'response'](#event-response)
+
   * [page.$(selector)](#pageselector) document.queryselector
+
   * [page.$$(selector)](#pageselector) document.querySelectorAll
+
   * [page.$$eval(selector, pageFunction[, ...args])](#pageevalselector-pagefunction-args) 作为函数的一个变量
+
   * [page.$eval(selector, pageFunction[, ...args])](#pageevalselector-pagefunction-args)
+
   * [page.$x(expression)](#pagexexpression) The method evaluates the XPath expression.
+
   * [page.addScriptTag(options)](#pageaddscripttagoptions) Adds a `<script>` tag into the page with the desired url or content.
+
   * [page.addStyleTag(options)](#pageaddstyletagoptions) Adds a `<link rel="stylesheet">` tag into the page with the desired url or a `<style type="text/css">` tag with the content.
+
   * [page.authenticate(credentials)](#pageauthenticatecredentials)
+
   * [page.bringToFront()](#pagebringtofront) Brings page to front 
+
   * [page.click(selector[, options])](#pageclickselector-options)
+
   * [page.close()](#pageclose)
+
   * [page.content()](#pagecontent)
+
   * [page.cookies(...urls)](#pagecookiesurls)
+
   * [page.coverage](#pagecoverage)
+
   * [page.deleteCookie(...cookies)](#pagedeletecookiecookies)
+
   * [page.emulate(options)](#pageemulateoptions) Emulates given device metrics and user agent.
-  * [page.emulateMedia(mediaType)](#pageemulatemediamediatype)
+
+  * [page.emulateMedia(mediaType)](#pageemulatemediamediatype) 
+
+    change the Css media type of the page
+
   * [page.evaluate(pageFunction, ...args)](#pageevaluatepagefunction-args)
+
   * [page.evaluateHandle(pageFunction, ...args)](#pageevaluatehandlepagefunction-args)
+
   * [page.evaluateOnNewDocument(pageFunction, ...args)](#pageevaluateonnewdocumentpagefunction-args)
+
   * [page.exposeFunction(name, puppeteerFunction)](#pageexposefunctionname-puppeteerfunction)
+
   * [page.focus(selector)](#pagefocusselector)
+
   * [page.frames()](#pageframes)
+
   * [page.goBack(options)](#pagegobackoptions)
+
   * [page.goForward(options)](#pagegoforwardoptions)
+
   * [page.goto(url, options)](#pagegotourl-options)
+
   * [page.hover(selector)](#pagehoverselector)
+
   * [page.keyboard](#pagekeyboard)
+
   * [page.mainFrame()](#pagemainframe)
+
   * [page.metrics()](#pagemetrics)
+
   * [page.mouse](#pagemouse)
+
   * [page.pdf(options)](#pagepdfoptions)
+
   * [page.queryObjects(prototypeHandle)](#pagequeryobjectsprototypehandle)
+
   * [page.reload(options)](#pagereloadoptions)
+
   * [page.screenshot([options])](#pagescreenshotoptions)
+
   * [page.select(selector, ...values)](#pageselectselector-values)
+
   * [page.setCacheEnabled(enabled)](#pagesetcacheenabledenabled)
+
   * [page.setContent(html)](#pagesetcontenthtml)
+
   * [page.setCookie(...cookies)](#pagesetcookiecookies)
+
   * [page.setDefaultNavigationTimeout(timeout)](#pagesetdefaultnavigationtimeouttimeout)
+
   * [page.setExtraHTTPHeaders(headers)](#pagesetextrahttpheadersheaders)
+
   * [page.setJavaScriptEnabled(enabled)](#pagesetjavascriptenabledenabled)
+
   * [page.setOfflineMode(enabled)](#pagesetofflinemodeenabled)
+
   * [page.setRequestInterception(value)](#pagesetrequestinterceptionvalue)
+
   * [page.setUserAgent(userAgent)](#pagesetuseragentuseragent)
+
   * [page.setViewport(viewport)](#pagesetviewportviewport)
+
   * [page.tap(selector)](#pagetapselector)
+
   * [page.target()](#pagetarget)
+
   * [page.title()](#pagetitle)
+
   * [page.touchscreen](#pagetouchscreen)
+
   * [page.tracing](#pagetracing)
+
   * [page.type(selector, text[, options])](#pagetypeselector-text-options)
+
   * [page.url()](#pageurl)
+
   * [page.viewport()](#pageviewport)
+
   * [page.waitFor(selectorOrFunctionOrTimeout[, options[, ...args]])](#pagewaitforselectororfunctionortimeout-options-args)
+
   * [page.waitForFunction(pageFunction[, options[, ...args]])](#pagewaitforfunctionpagefunction-options-args)
+
   * [page.waitForNavigation(options)](#pagewaitfornavigationoptions)
+
   * [page.waitForSelector(selector[, options])](#pagewaitforselectorselector-options)
+
   * [page.waitForXPath(xpath[, options])](#pagewaitforxpathxpath-options)
 - [class: Keyboard](#class-keyboard)
   * [keyboard.down(key[, options])](#keyboarddownkey-options)
