@@ -2,9 +2,11 @@
 
 ### Blog专栏
 
-| Name                                | Summary |
-| ----------------------------------- | ------- |
-| [FEX百度前端研发部](http://fex.baidu.com/) |         |
+| Name                                       | Summary          |
+| ------------------------------------------ | ---------------- |
+| [FEX百度前端研发部](http://fex.baidu.com/) |                  |
+| https://blog.csdn.net/flushhip             | 一个写算法的blog |
+|                                            |                  |
 
 ### Blog英文文章
 
