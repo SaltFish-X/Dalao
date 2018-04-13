@@ -18,6 +18,8 @@
 
 ### Blog 翻译文章
 
-| Name                                     | Summary |
-| ---------------------------------------- | ------- |
-| [ 深入理解JavaScript系列（12）：变量对象（Variable Object）](http://www.cnblogs.com/TomXu/archive/2012/01/16/2309728.html) |         |
+| Name                                                         | Summary      |
+| ------------------------------------------------------------ | ------------ |
+| [变量对象（Variable Object）](http://www.cnblogs.com/TomXu/archive/2012/01/16/2309728.html) |              |
+| [淘宝讲性能优化的PPT](https://www.slideshare.net/leneli/after-yahoo-34-rules-5088505)<br>[高性能web前端优化指南目录](http://jo2.org/webpage-speedy-optimize/) | 网站性能优化 |
+
