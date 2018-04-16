@@ -77,7 +77,7 @@ text-overflow：ellipsis
 
 ## 布局
 
-### 垂直居中
+### [垂直居中](http://demo.doyoe.com/css/alignment/)
 
 ```
 html结构
@@ -102,10 +102,10 @@ html结构
   vertical-align:middle;
 }
 
-.wrap{
+.main{
   text-align:center;
 }
-.wrap:after{
+.main:after{
   content:'';
   width:0;
   hegiht:100%;
