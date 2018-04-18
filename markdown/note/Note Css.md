@@ -123,6 +123,49 @@ html结构
 }
 ```
 
-#### table-cell会引起重排影响性能，所以不建议使用
+### table-cell
+
+table-cell会引起重排影响性能，所以不建议使用
 
 zoom可以引发 layout，但不引起页面差异。可以用来处理浏览器自作主张的优化。肉眼看不到效果，要看 performance 日志
+
+### [瀑布流](https://www.w3cplus.com/css/pure-css-create-masonry-layout.html)
+
+css的瀑布流均为多行文本的瀑布流，有局限性
+
+#### Multi-columns 多栏布局 用于多行文本
+
+[MDN相关文档](https://developer.mozilla.org/zh-CN/docs/Web/CSS/CSS_Columns)
+
+```scss
+.contained {
+    column-count:5; // 列数
+    column-gap:0; // 列间距
+    .item {
+        // 控制堆栈间的空隙。将文本块分解成单独的列，以免项目列表的内容跨列
+        break-inside: avoid; 
+        box-sizing: border-box; // 避免中断布局
+    }
+}
+
+```
+
+#### flex
+
+```scss
+.contained {
+    display: flex;
+    flex-flow: column warp; //IE11正常，chrome40、Firefox34 bug
+    height: 100px; // 必须设置
+}
+
+// 另一种
+.contained {
+    display:flex;
+    flex-direction: row;
+    .column {
+        flex-direction: column;
+    }
+}
+```
+
