@@ -20,7 +20,6 @@
       1. 写了 猜猜猜 前后端分离 用了简单的ES2015 webpack
       2. 遇到几个Safari的坑（input默认样式、sort不支持返回Boolean、多位数字自动识别电话号码、Date不支持短横杆）
 
-
 ### 2017
     2017.1-2 
       1. 开始加入物流项目，熟悉了vue的vue-cli、vue-route
@@ -29,7 +28,7 @@
 ### 2018
 
 ```
-
+2018.4 2017年整个一年算废掉了，希望在新公司能做些有趣的事情
 ```
 
 
@@ -55,7 +54,8 @@
 
 ```
 1.8-2.1 learn TypeScript
-2.7-    learn puppeteer
+2.7-2.14 learn puppeteer
+4.18 learn waterFall 瀑布流
 ```
 
 ## Goal
