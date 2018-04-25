@@ -121,6 +121,8 @@ html结构
   top: 50%;
   transform: translate(-50%, -50%);
 }
+
+4.flex
 ```
 
 ### table-cell
@@ -166,6 +168,25 @@ css的瀑布流均为多行文本的瀑布流，有局限性
     .column {
         flex-direction: column;
     }
+}
+```
+
+### 表单lable对齐
+
+```
+letter-spacing:2em 需要空几个字就几em，但是会让冒号也空出来
+
+使用inline-block和text-align:justify
+https://www.w3cplus.com/css/text-align-justify-and-rwd.html
+
+text-align-last: justify;
+
+text-align:justify 往里面塞内联<i></i>块逼成两行
+或者上伪元素
+div:after {
+    content: " ";
+    display: inline-block;
+    width: 100%;
 }
 ```
 

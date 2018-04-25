@@ -80,3 +80,20 @@ const Foo = r => require.ensure([], () => r(require('./Foo.vue')), 'group-foo')
 const Bar = r => require.ensure([], () => r(require('./Bar.vue')), 'group-foo')
 const Baz = r => require.ensure([], () => r(require('./Baz.vue')), 'group-foo')
 ```
+#### 符号!!~
+
+```
+~为取反运算符，如果names.indexOf(name)返回值为-1，即names不包含name，那么~-1 = 0。其他值取反后值都不为0。结合!~来判断names是否包含name
+
+!!name 用来判断name是否为空字符或undefined 
+
+arrary.prototype.indexof ， 没有包含，就返回-1
+
+～是位运算，按位取反。效果是转number，+1，然后取负数。
+也就是说，如果不包含得到-1，就+1，再乘以-1，也就是0
+
+!! 就是强转boolean
+把 0 换成 false
+!! 在if里面是可以省略的一般
+```
+

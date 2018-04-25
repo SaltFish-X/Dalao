@@ -5,9 +5,10 @@ Tree是mac、linx下，生成文档树的一个工具，安装方式为`brew ins
 * 常用指令
 
   ```
-  tree -L 1 // 显示第一集的目录和文件
-  tree -L 1 > README.md // 输出到README.md
-  tree -L -N // 显示汉字
+  tree -L 1 显示第一集的目录和文件
+  tree -L 1 > README.md 输出到README.md
+  tree -L -N 显示汉字
+  tree -d   显示目录名称而非内容。
   ```
 
 
