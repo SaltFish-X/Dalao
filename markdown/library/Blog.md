@@ -30,4 +30,7 @@
 | [JavaScript 运行机制--Event Loop详解](https://juejin.im/post/5aab2d896fb9a028b86dc2fd) |         |
 | [重构姿势](https://juejin.im/post/5adc8e18518825672b0352a8)  |         |
 | [Vue双向绑定](https://juejin.im/post/5adf0085518825673123da9a) |         |
+| [Vue源码-双向绑定部分](https://juejin.im/post/5adff30f518825672d33d596) |         |
+|                                                              |         |
+|                                                              |         |
 

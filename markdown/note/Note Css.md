@@ -190,3 +190,18 @@ div:after {
 }
 ```
 
+### [文字垂直居中](https://blog.csdn.net/maomaolaoshi/article/details/77949617)
+
+```
+vertical-align:middle; 一般用于行内的文字
+vertical-align用来指定行内元素（inline）和行内块级元素（inline-block）或表格单元格（table-cell）元素的垂直对齐方式。
+
+line-hegiht & hegiht
+目标元素（字体）的line-height大小等于父类元素的height大小，可以实现垂直居中。 
+
+行内块级元素垂直居中 & vertical-align：top
+1. 更改字体所在的元素为display：inline-block，position：relative; 
+2. 设置字体的line-height与font-size相等； 
+3. 设置字体所在元素，top：50%;，vertical-align:top，margin-top为负的font-size大小的一半。
+```
+
