@@ -94,6 +94,8 @@ arrary.prototype.indexof ， 没有包含，就返回-1
 
 !! 就是强转boolean
 把 0 换成 false
-!! 在if里面是可以省略的一般
+!! 在if里面一般是可以省略的
+
+!!~roles.indexOf(1)
 ```
 
