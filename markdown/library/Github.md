@@ -6,6 +6,8 @@
 | ------------------------------------------------------ | ------------------------------------------ |
 | [puppeteer](https://github.com/GoogleChrome/puppeteer) | Chrome出品，爬虫过验证码等                 |
 | [FiraCode](https://github.com/tonsky/FiraCode)         | Monospaced font with programming ligatures |
+| [RSSHub](https://github.com/DIYgod/RSSHub)             | RSSHub 是一个轻量、易于扩展的 RSS 生成器   |
+|                                                        |                                            |
 |                                                        |                                            |
 
 ### GitHub Blog
