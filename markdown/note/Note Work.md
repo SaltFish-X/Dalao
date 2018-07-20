@@ -99,3 +99,14 @@ arrary.prototype.indexof ， 没有包含，就返回-1
 !!~roles.indexOf(1)
 ```
 
+
+
+#### vue 父子组件 属性通讯简写法
+
+```
+:visible.sync="visible"
+拆成 可关闭el-dialog
+:visible="visible"
+@update:visible="val => $emit('update:visible', val)"
+```
+

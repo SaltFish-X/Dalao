@@ -49,12 +49,12 @@ align-content 多根轴线的对齐方式，只有一根轴线则属性无效
 | space-between   | 两端对齐，item间隔相等 |
 | space-around    | item两侧间隔相等    |
 
-| align-item  | 交叉轴的对齐方式              |
-| ----------- | --------------------- |
-| flex-start  | 交叉轴起点对齐               |
-| flex-end    | 交叉轴终点对齐               |
-| center      | 交叉轴中点对齐               |
-| baseline    | 第一行文字的基线对齐            |
+| align-items    | 交叉轴的对齐方式                       |
+| -------------- | -------------------------------------- |
+| flex-start     | 交叉轴起点对齐                         |
+| flex-end       | 交叉轴终点对齐                         |
+| center         | 交叉轴中点对齐                         |
+| baseline       | 第一行文字的基线对齐                   |
 | stretch 默认值 | 高度未设置或auto，将占满整个容器的高度 |
 
 | align-content | 多根轴线的对齐方式             |

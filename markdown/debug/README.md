@@ -2,6 +2,13 @@
 
 [TOC]
 
+### GitHub Pull & Issue
+
+| Name        | Pull or Issue | Summary                                     |
+| ----------- | ------------- | ------------------------------------------- |
+| **axios**   | Pull#1581     | Fix `withCredentials` don’t work            |
+| **wxParse** | Issue#232     | Fix  text don't show , in MIUI 9.5 &  MIX2S |
+
 ### &&运算符
 
 ```javascript
