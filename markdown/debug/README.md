@@ -76,3 +76,9 @@ table {border:1px soild #ddd;}
 
 ```
 
+### Content in overflow: hidden  can show in padding
+
+```
+加<p></p>子类
+```
+
