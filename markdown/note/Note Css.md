@@ -96,20 +96,20 @@ html结构
 }
 
 2. vertical-align inline-block 需要设置父元素after 
-
-.element{
+.main:after{
+  content: '';
   display: inline-block;
-  vertical-align:middle;
+  height: 100%;
+  vertical-align: middle;
 }
 
 .main{
+	height:400px;
   text-align:center;
 }
-.main:after{
-  content:'';
-  width:0;
-  hegiht:100%;
-  display:inline-block;
+
+.element{
+  display: inline-block;
   vertical-align:middle;
 }
 

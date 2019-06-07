@@ -39,8 +39,9 @@
 | Name                                                         | Summary |
 | ------------------------------------------------------------ | ------- |
 | [asnyc/await内的循环](https://zhuanlan.zhihu.com/p/31000936) |         |
+| [asnyc/await内的错误处理](https://www.zhihu.com/question/53692706/answer/297578995) |         |
 |                                                              |         |
 |                                                              |         |
 |                                                              |         |
 |                                                              |         |
-|                                                              |         |
+
