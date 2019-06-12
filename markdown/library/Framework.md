@@ -4,11 +4,11 @@
 
 ### JavaScript
 
-| Name                                     | Summary                 |
-| ---------------------------------------- | ----------------------- |
+| Name                                             | Summary                                   |
+| ------------------------------------------------ | ----------------------------------------- |
 | [Antv](https://antv.alipay.com/zh-cn/index.html) | AntV 是蚂蚁金服全新一代数据可视化解决方案 |
-| [Lavas](https://lavas.baidu.com/)        | Lavas\|基于Vue的PWA解决方案    |
-|                                          |                         |
+| [Lavas](https://lavas.baidu.com/)                | Lavas\|基于Vue的PWA解决方案               |
+| [amis](<https://github.com/baidu/amis)           | 基于json-schema配置快速生成页面           |
 
 ### UI
 
