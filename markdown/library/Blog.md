@@ -45,3 +45,11 @@
 |                                                              |         |
 |                                                              |         |
 
+### segmentfault
+
+| Name                                                         | Summary |
+| ------------------------------------------------------------ | ------- |
+| [Skeleton Screen/加载占位图](<http://dobit.top/archives/Skeleton+Screen+Loading%E5%87%A0%E7%A7%8D%E5%AE%9E%E7%8E%B0%E6%96%B9%E5%BC%8F.html>) |         |
+|                                                              |         |
+|                                                              |         |
+
