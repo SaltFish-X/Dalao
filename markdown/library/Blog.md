@@ -33,6 +33,7 @@
 | [Vue源码-双向绑定部分](https://juejin.im/post/5adff30f518825672d33d596) |         |
 | [写一个脚手架](<https://juejin.im/post/5aa4fe25518825557918473a>) |         |
 |                                                              |         |
+|                                                              |         |
 
 ### 知乎
 
@@ -60,4 +61,13 @@
 | [使用 Flexible 实现手淘 H5 页面的终端适配](https://juejin.im/entry/56a879a4c24aa8005448b8c4) |         |
 | [再聊移动端页面的适配](https://juejin.im/entry/5a9d07ee6fb9a028c149f55b) |         |
 | [如何在**Vue**项目中使用**vw**实现移动端适配](https://juejin.im/entry/5aa09c3351882555602077ca) |         |
+
+### 前端优化
+
+| Name                                                         | Summary        |
+| ------------------------------------------------------------ | -------------- |
+| [性能优化之组件懒加载](https://juejin.im/post/59bf501ff265da06602971b9) |                |
+| [动态导入+代码拆分](https://www.infoq.cn/article/9ihyy7HW00ij8suTh*zN) | Vuex的模块拆分 |
+| [前端渲染过程及优化](https://zhuanlan.zhihu.com/p/69448670)  |                |
+| [可视区域渲染]()                                             | TODO           |
 
