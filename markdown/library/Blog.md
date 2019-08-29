@@ -41,7 +41,7 @@
 | ------------------------------------------------------------ | ------- |
 | [asnyc/await内的循环](https://zhuanlan.zhihu.com/p/31000936)<br />[asnyc/await内的错误处理](https://www.zhihu.com/question/53692706/answer/297578995) |         |
 | [合并Http请求的细节说明](<https://www.zhihu.com/question/34401250>)<br />[Http传行和并行请求的实验比较](<https://juejin.im/post/5b166d1ee51d4506d5366982>) |         |
-|                                                              |         |
+| [表驱动优化if-else](https://www.zhihu.com/question/37943171/answer/119525120) |         |
 |                                                              |         |
 |                                                              |         |
 |                                                              |         |
@@ -70,4 +70,12 @@
 | [动态导入+代码拆分](https://www.infoq.cn/article/9ihyy7HW00ij8suTh*zN) | Vuex的模块拆分 |
 | [前端渲染过程及优化](https://zhuanlan.zhihu.com/p/69448670)  |                |
 | [可视区域渲染]()                                             | TODO           |
+
+### 面试
+
+| Name                                                         | Summary |
+| ------------------------------------------------------------ | ------- |
+| [百度二面面试题](https://imcuttle.github.io/baidu-fe-interview-2) |         |
+|                                                              |         |
+|                                                              |         |
 
