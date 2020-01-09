@@ -8,7 +8,7 @@
 | [spritegen](https://spritegen.website-performance.org/)      | CSS Sprite Generator                                         |
 | [PageSpeed](https://developers.google.com/speed/docs/insights/rules) | 页面优化渲染 & 提升网页加载速度工具                          |
 | [Flex预览工具](http://007sair.github.io/demo/flex-tool.html) |                                                              |
-|                                                              |                                                              |
+| [UA分析库](http://www.fynas.com/ua)                          |                                                              |
 |                                                              |                                                              |
 |                                                              |                                                              |
 
